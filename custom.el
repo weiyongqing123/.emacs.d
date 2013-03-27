@@ -8,6 +8,19 @@
  '(org-agenda-files (quote ("~/UbuntuOne/life/task.org")))
  '(send-mail-function nil)
  '(session-use-package t nil (session)))
+
+;;页面标签栏
+(add-to-list 'load-path
+              "~/.emacs.d/elpa/tabbar")
+(require 'tabbar)
+(tabbar-mode t)
+
+;;将子窗口自动编号,然后按M-0…9跳转
+(add-to-list 'load-path "~/.emacs.d/elpa/window-numbering.el")
+(require 'window-numbering )
+(window-numbering-mode 1)
+
+
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
