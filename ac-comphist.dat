@@ -1,6 +1,34 @@
-((("UserLoginStatu" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 1])
+((("ido-switch-buffer" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("function" .
+   [0 0 0 1 0 0 0 0])
+  ("public" .
+   [0 0 0 0 0 1])
+  ("save-place" .
+   [0 0 0 0 0 1 0 0 0 0])
+  ("setq-default" .
+   [0 0 0 0 0 0 0 0 0 0 0 1])
+  ("saveplace" .
+   [0 0 0 1 0 0 0 0 0])
+  ("require" .
+   [0 0 0 0 0 0 1])
+  ("let" .
+   [0 0 1])
+  ("defn" .
+   [0 0 0 1])
+  ("whitespace" .
+   [0 0 0 0 1 0 0 0 0 0])
   ("message" .
    [0 0 0 0 0 0 1])
-  ("whitespace" .
-   [0 0 0 0 1 0 0 0 0 0])))
+  ("UserLoginStatu" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("buffer-size" .
+   [0 0 0 0 0 0 0 0 1 0 0])
+  ("goto-" .
+   [0 0 0 0 1])
+  ("goto-char" .
+   [0 0 0 0 0 0 0 0 1])
+  ("point-min" .
+   [0 0 0 0 0 1 0 0 0])
+  ("kill-buffer" .
+   [0 0 0 0 0 0 1 0 0 0 0])))
