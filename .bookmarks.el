@@ -2,9 +2,9 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("task.org"
- (filename . "~/UbuntuOne/life/task.org")
- (front-context-string . "\nCLOSED: [2013-0")
- (rear-context-string . "Resource\nemitter")
- (position . 11330))
+(("proclass_door.blade.php"
+ (filename . "/opt/lampp/htdocs/azn/application/views/admin/product/proclass_door.blade.php")
+ (front-context-string . "\" style=\"HEIGHT:")
+ (rear-context-string . "c=\"pro_temp.html")
+ (position . 1260))
 )

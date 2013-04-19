@@ -166,8 +166,10 @@ instead."
 (define-key global-map [f11] 'save-some-buffers)
 (define-key global-map [f12] 'kill-buffer)
 
-(define-key global-map  [C-left] 'previous-buffer)
-(define-key global-map  [C-right] 'next-buffer)
+(define-key global-map   (kbd "C-'") 'duplicate-line)
+
+(define-key global-map   (kbd "C-,") 'previous-buffer)
+(define-key global-map  (kbd "C-.") 'next-buffer)
 
 (setq ido-enable-flex-matching t)
 
@@ -213,6 +215,23 @@ instead."
             (local-set-key (kbd "'") 'skeleton-pair-insert-maybe)
             (local-set-key (kbd "\"") 'skeleton-pair-insert-maybe)
             ))
+
+
+(add-hook 'text-mode-hook
+         '(lambda()
+            ;; 插入对称的括号
+            (make-variable-buffer-local 'skeleton-pair)
+            (make-variable-buffer-local 'skeleton-pair-on-word)
+            (setq skeleton-pair-on-word t)
+            (setq skeleton-pair t)
+            (make-variable-buffer-local 'skeleton-pair-alist)
+            (local-set-key (kbd "(") 'skeleton-pair-insert-maybe)
+            (local-set-key (kbd "[") 'skeleton-pair-insert-maybe)
+            (local-set-key (kbd "{") 'skeleton-pair-insert-maybe)
+            (local-set-key (kbd "'") 'skeleton-pair-insert-maybe)
+            (local-set-key (kbd "\"") 'skeleton-pair-insert-maybe)
+            ))
+
 
 (add-hook 'php-mode-hook
          '(lambda()
