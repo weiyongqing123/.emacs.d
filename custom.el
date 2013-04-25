@@ -14,7 +14,8 @@
 (global-set-key [(control tab)] 'set-mark-command)
 
 ;;自动识别中文编码的文件
-(require 'unicad)
+;;(require 'unicad)
+
 
 ;;拼写检查的词典
 (ispell-change-dictionary "american" t)
@@ -73,24 +74,17 @@
 (defvar smart-use-extended-syntax nil
   "If t the smart symbol functionality will consider extended
 syntax in finding matches, if such matches exist.")
- 
 (defvar smart-last-symbol-name ""
   "Contains the current symbol name.
- 
 This is only refreshed when `last-command' does not contain
 either `smart-symbol-go-forward' or `smart-symbol-go-backward'")
- 
 (make-local-variable 'smart-use-extended-syntax)
- 
 (defvar smart-symbol-old-pt nil
   "Contains the location of the old point")
- 
 (defun smart-symbol-goto (name direction)
   "Jumps to the next NAME in DIRECTION in the current buffer.
- 
 DIRECTION must be either `forward' or `backward'; no other option
 is valid."
- 
   ;; if `last-command' did not contain
   ;; `smart-symbol-go-forward/backward' then we assume it's a
   ;; brand-new command and we re-set the search term.
@@ -113,20 +107,16 @@ is valid."
                              (syntax-ppss (point))) '(string comment))
                 (throw 'done t))))
     (goto-char smart-symbol-old-pt)))
- 
 (defun smart-symbol-go-forward ()
   "Jumps forward to the next symbol at point"
   (interactive)
   (smart-symbol-goto (smart-symbol-at-pt 'end) 'forward))
- 
 (defun smart-symbol-go-backward ()
   "Jumps backward to the previous symbol at point"
   (interactive)
   (smart-symbol-goto (smart-symbol-at-pt 'beginning) 'backward))
- 
 (defun smart-symbol-at-pt (&optional dir)
   "Returns the symbol at point and moves point to DIR (either `beginning' or `end') of the symbol.
- 
 If `smart-use-extended-syntax' is t then that symbol is returned
 instead."
   (with-syntax-table (make-syntax-table)
@@ -149,15 +139,18 @@ instead."
 (global-set-key (kbd "M-p") 'smart-symbol-go-backward)
 
 
-
-(add-to-list 'load-path
-              "~/.emacs.d/elpa/yasnippet")
+;;yasnippet
+(add-to-list 'load-path "~/.emacs.d/elpa/yasnippet")
 (require 'yasnippet)
 (yas-global-mode 1)
 
-(define-key global-map [f1] 'ido-find-file)
+;;projectile-mode
+(projectile-global-mode)
+
+
+(define-key global-map [f1] 'my-recentf-open)
 (define-key global-map [f2] 'save-buffer)
-(define-key global-map [f5] 'my-recentf-open)
+(define-key global-map [f5] 'call-last-kbd-macro)
 (define-key global-map [f6] 'bookmark-set)
 (define-key global-map [f7] 'bookmark-jump)
 (define-key global-map [f8] 'bookmark-bmenu-list)
@@ -165,14 +158,18 @@ instead."
 (define-key global-map [f10] 'ido-switch-buffer)
 (define-key global-map [f11] 'save-some-buffers)
 (define-key global-map [f12] 'kill-buffer)
-
 (define-key global-map   (kbd "C-'") 'duplicate-line)
-
-(define-key global-map   (kbd "C-,") 'previous-buffer)
-(define-key global-map  (kbd "C-.") 'next-buffer)
+(define-key global-map   (kbd "C-<f1>") 'projectile-find-file)
+(define-key global-map  (kbd "C-<up>") 'previous-buffer)
+(define-key global-map  (kbd "C-<down>") 'next-buffer)
+(global-set-key (kbd "<C-S-up>")     'buf-move-up)
+(global-set-key (kbd "<C-S-down>")   'buf-move-down)
+(global-set-key (kbd "<C-S-left>")   'buf-move-left)
+(global-set-key (kbd "<C-S-right>")  'buf-move-right)
 
 (setq ido-enable-flex-matching t)
 
+;;打开最近访问文件
 (defun my-recentf-open ()
   "open recent files.  In ido style if applicable --lgfang"
   (interactive)
@@ -200,53 +197,22 @@ instead."
 (require 'window-numbering )
 (window-numbering-mode 1)
 
-
-(add-hook 'js2-mode-hook
-         '(lambda()
-            ;; 插入对称的括号
-            (make-variable-buffer-local 'skeleton-pair)
-            (make-variable-buffer-local 'skeleton-pair-on-word)
-            (setq skeleton-pair-on-word t)
-            (setq skeleton-pair t)
-            (make-variable-buffer-local 'skeleton-pair-alist)
-            (local-set-key (kbd "(") 'skeleton-pair-insert-maybe)
-            (local-set-key (kbd "[") 'skeleton-pair-insert-maybe)
-            (local-set-key (kbd "{") 'skeleton-pair-insert-maybe)
-            (local-set-key (kbd "'") 'skeleton-pair-insert-maybe)
-            (local-set-key (kbd "\"") 'skeleton-pair-insert-maybe)
-            ))
-
-
-(add-hook 'text-mode-hook
-         '(lambda()
-            ;; 插入对称的括号
-            (make-variable-buffer-local 'skeleton-pair)
-            (make-variable-buffer-local 'skeleton-pair-on-word)
-            (setq skeleton-pair-on-word t)
-            (setq skeleton-pair t)
-            (make-variable-buffer-local 'skeleton-pair-alist)
-            (local-set-key (kbd "(") 'skeleton-pair-insert-maybe)
-            (local-set-key (kbd "[") 'skeleton-pair-insert-maybe)
-            (local-set-key (kbd "{") 'skeleton-pair-insert-maybe)
-            (local-set-key (kbd "'") 'skeleton-pair-insert-maybe)
-            (local-set-key (kbd "\"") 'skeleton-pair-insert-maybe)
-            ))
-
-
-(add-hook 'php-mode-hook
-         '(lambda()
-            ;; 插入对称的括号
-            (make-variable-buffer-local 'skeleton-pair)
-            (make-variable-buffer-local 'skeleton-pair-on-word)
-            (setq skeleton-pair-on-word t)
-            (setq skeleton-pair t)
-            (make-variable-buffer-local 'skeleton-pair-alist)
-            (local-set-key (kbd "(") 'skeleton-pair-insert-maybe)
-            (local-set-key (kbd "[") 'skeleton-pair-insert-maybe)
-            (local-set-key (kbd "{") 'skeleton-pair-insert-maybe)
-            (local-set-key (kbd "'") 'skeleton-pair-insert-maybe)
-            (local-set-key (kbd "\"") 'skeleton-pair-insert-maybe)
-            ))
+;;给相关模式加上括号匹配输入
+(autopair-global-mode) ;; enable autopair in all buffers
+;; (add-hook 'text-mode-hook
+;;          '(lambda()
+;;             ;; 插入对称的括号
+;;             (make-variable-buffer-local 'skeleton-pair)
+;;             (make-variable-buffer-local 'skeleton-pair-on-word)
+;;             (setq skeleton-pair-on-word t)
+;;             (setq skeleton-pair t)
+;;             (make-variable-buffer-local 'skeleton-pair-alist)
+;;             (local-set-key (kbd "(") 'skeleton-pair-insert-maybe)
+;;             (local-set-key (kbd "[") 'skeleton-pair-insert-maybe)
+;;             (local-set-key (kbd "{") 'skeleton-pair-insert-maybe)
+;;             (local-set-key (kbd "'") 'skeleton-pair-insert-maybe)
+;;             (local-set-key (kbd "\"") 'skeleton-pair-insert-maybe)
+;;             ))
 
 
 (custom-set-faces

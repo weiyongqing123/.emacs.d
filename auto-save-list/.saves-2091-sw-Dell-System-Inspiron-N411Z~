@@ -1,2 +1,10 @@
-/home/sw/UbuntuOne/life/task.org
-/home/sw/UbuntuOne/life/#task.org#
+/opt/lampp/htdocs/azn/application/views/admin/product/proclass_managelist.blade.php
+/opt/lampp/htdocs/azn/application/views/admin/product/#proclass_managelist.blade.php#
+/opt/lampp/htdocs/azn/application/controllers/product.php
+/opt/lampp/htdocs/azn/application/controllers/#product.php#
+/opt/lampp/htdocs/azn/application/views/admin/product/proclass_list.blade.php
+/opt/lampp/htdocs/azn/application/views/admin/product/#proclass_list.blade.php#
+/opt/lampp/htdocs/azn/application/views/admin/product/area_list.blade.php
+/opt/lampp/htdocs/azn/application/views/admin/product/#area_list.blade.php#
+/opt/lampp/htdocs/azn/application/routes.php
+/opt/lampp/htdocs/azn/application/#routes.php#

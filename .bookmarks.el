@@ -2,9 +2,14 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("proclass_door.blade.php"
- (filename . "/opt/lampp/htdocs/azn/application/views/admin/product/proclass_door.blade.php")
- (front-context-string . "\" style=\"HEIGHT:")
- (rear-context-string . "c=\"pro_temp.html")
- (position . 1260))
+(("class_modi"
+ (filename . "/opt/lampp/htdocs/azn/application/controllers/product.php")
+ (front-context-string . "\n        $class ")
+ (rear-context-string . "ut::get('w_id');")
+ (position . 3136))
+("index.html"
+ (filename . "~/throne/web-server/public/js/local/ui/test/index.html")
+ (front-context-string . "\n  </head>\n  <bo")
+ (rear-context-string . "ript>\n    script")
+ (position . 620))
 )
