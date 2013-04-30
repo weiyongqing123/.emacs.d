@@ -3,11 +3,14 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(column-number-mode t)
+ '(cua-mode t nil (cua-base))
  '(custom-enabled-themes (quote (sanityinc-solarized-dark)))
  '(custom-safe-themes (quote ("4aee8551b53a43a883cb0b7f3255d6859d766b6c5e14bcb01bed572fcbef4328" "4cf3221feff536e2b3385209e9b9dc4c2e0818a69a1cdb4b522756bcdf4e00a4" default)))
  '(org-agenda-files (quote ("~/UbuntuOne/life/task.org")))
  '(send-mail-function nil)
- '(session-use-package t nil (session)))
+ '(session-use-package t nil (session))
+ '(tool-bar-mode nil))
 
 
 ;;自定义的设置
@@ -151,9 +154,9 @@ instead."
 (define-key global-map [f1] 'my-recentf-open)
 (define-key global-map [f2] 'save-buffer)
 (define-key global-map [f5] 'call-last-kbd-macro)
-(define-key global-map [f6] 'bookmark-set)
-(define-key global-map [f7] 'bookmark-jump)
-(define-key global-map [f8] 'bookmark-bmenu-list)
+(define-key global-map [f6] 'point-to-register)
+(define-key global-map [f7] 'window-configuration-to-register)
+(define-key global-map [f8] 'jump-to-register)
 (define-key global-map [f9] 'goto-last-change)
 (define-key global-map [f10] 'ido-switch-buffer)
 (define-key global-map [f11] 'save-some-buffers)
@@ -199,21 +202,6 @@ instead."
 
 ;;给相关模式加上括号匹配输入
 (autopair-global-mode) ;; enable autopair in all buffers
-;; (add-hook 'text-mode-hook
-;;          '(lambda()
-;;             ;; 插入对称的括号
-;;             (make-variable-buffer-local 'skeleton-pair)
-;;             (make-variable-buffer-local 'skeleton-pair-on-word)
-;;             (setq skeleton-pair-on-word t)
-;;             (setq skeleton-pair t)
-;;             (make-variable-buffer-local 'skeleton-pair-alist)
-;;             (local-set-key (kbd "(") 'skeleton-pair-insert-maybe)
-;;             (local-set-key (kbd "[") 'skeleton-pair-insert-maybe)
-;;             (local-set-key (kbd "{") 'skeleton-pair-insert-maybe)
-;;             (local-set-key (kbd "'") 'skeleton-pair-insert-maybe)
-;;             (local-set-key (kbd "\"") 'skeleton-pair-insert-maybe)
-;;             ))
-
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
