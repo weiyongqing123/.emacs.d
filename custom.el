@@ -196,7 +196,7 @@ instead."
 ;; (tabbar-mode t)
 
 ;;将子窗口自动编号,然后按M-0…9跳转
-(add-to-list 'load-path "~/.emacs.d/elpa/window-numbering.el")
+(add-to-list 'load-path "~/.emacs.d/elpa/window-numbering")
 (require 'window-numbering )
 (window-numbering-mode 1)
 

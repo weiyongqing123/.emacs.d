@@ -1,0 +1,6 @@
+# name:@foreach
+# key: foreach
+# --
+@foreach($1->results as $2)
+
+@endforeach

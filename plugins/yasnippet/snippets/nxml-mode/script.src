@@ -1,0 +1,5 @@
+# contributor: weiyongqing <weiyongq@gmail.com>
+#name :<script src="..." ></script> 
+# key: scripts
+# --
+<script src="$1"></script>

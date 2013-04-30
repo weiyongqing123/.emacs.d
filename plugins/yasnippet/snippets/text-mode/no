@@ -1,0 +1,5 @@
+# name:no
+# key: no
+# --
+<?php $no = 1 ?>
+{{$no++}}

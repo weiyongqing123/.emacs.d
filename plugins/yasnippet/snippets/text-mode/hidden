@@ -1,0 +1,4 @@
+# name:hidden
+# key: hidden
+# --
+<input type="hidden" name="$1" value="{{$$1}}">

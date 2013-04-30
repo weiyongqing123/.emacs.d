@@ -1,0 +1,5 @@
+# contributor: yongqing wei <weiyongq@gmail.com>
+# name: <button ...> ...</button>
+# key: button
+# --
+<button id="$1">$2</button>

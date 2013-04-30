@@ -1,0 +1,4 @@
+# name:add or update table
+# key: add
+# --
+'$1'=> Input::get('$1'),

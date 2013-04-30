@@ -1,0 +1,5 @@
+# name:uedit-content
+# key: uedit
+# --
+<textarea name='$1' id="$1" ></textarea>
+<script type="text/javascript">UE.getEditor('$1')</script>

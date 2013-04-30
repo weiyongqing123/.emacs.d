@@ -1,50 +1,50 @@
-((("id" .
-   [1 0])
-  ("<canvas" .
-   [0 0 0 0 0 0 1])
-  ("call-last-kbd-macro" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("Call" .
-   [1 0 0 0])
-  ("is_null" .
-   [0 0 0 0 1 0 0])
-  ("kill-buffer" .
-   [0 0 0 0 0 0 1 0 0 0 0])
-  ("point-min" .
-   [0 0 0 0 0 1 0 0 0])
-  ("goto-char" .
-   [0 0 0 0 0 0 0 0 1])
-  ("goto-" .
+((("count" .
    [0 0 0 0 1])
-  ("buffer-size" .
-   [0 0 0 0 0 0 0 0 1 0 0])
-  ("UserLoginStatu" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("message" .
-   [0 0 0 0 0 0 1])
-  ("whitespace" .
-   [0 0 0 0 1 0 0 0 0 0])
-  ("defn" .
-   [0 0 0 1])
-  ("let" .
-   [0 0 1])
-  ("require" .
-   [0 0 0 0 0 0 1])
-  ("saveplace" .
-   [0 0 0 1 0 0 0 0 0])
-  ("setq-default" .
-   [0 0 0 0 0 0 0 0 0 0 0 1])
-  ("save-place" .
-   [0 0 0 0 0 1 0 0 0 0])
-  ("public" .
-   [0 0 0 0 0 1])
-  ("function" .
-   [0 0 0 1 0 0 0 0])
-  ("ido-switch-buffer" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("projectile-mode" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 2])
   ("projectile-off" .
    [0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("count" .
-   [0 0 0 0 1])))
+  ("projectile-mode" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 2])
+  ("ido-switch-buffer" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("function" .
+   [0 0 0 1 0 0 0 0])
+  ("public" .
+   [0 0 0 0 0 1])
+  ("save-place" .
+   [0 0 0 0 0 1 0 0 0 0])
+  ("setq-default" .
+   [0 0 0 0 0 0 0 0 0 0 0 1])
+  ("saveplace" .
+   [0 0 0 1 0 0 0 0 0])
+  ("require" .
+   [0 0 0 0 0 0 1])
+  ("let" .
+   [0 0 1])
+  ("defn" .
+   [0 0 0 1])
+  ("whitespace" .
+   [0 0 0 0 1 0 0 0 0 0])
+  ("message" .
+   [0 0 0 0 0 0 1])
+  ("UserLoginStatu" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("buffer-size" .
+   [0 0 0 0 0 0 0 0 1 0 0])
+  ("goto-" .
+   [0 0 0 0 1])
+  ("goto-char" .
+   [0 0 0 0 0 0 0 0 1])
+  ("point-min" .
+   [0 0 0 0 0 1 0 0 0])
+  ("kill-buffer" .
+   [0 0 0 0 0 0 1 0 0 0 0])
+  ("is_null" .
+   [0 0 0 0 1 0 0])
+  ("Call" .
+   [1 0 0 0])
+  ("call-last-kbd-macro" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("<canvas" .
+   [0 0 0 0 0 0 1])
+  ("id" .
+   [1 0])))

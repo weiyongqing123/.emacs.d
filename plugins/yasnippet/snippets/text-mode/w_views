@@ -1,0 +1,6 @@
+# name:w_views
+# key: views
+# --
+<td height="23" colspan="2" bgcolor="F1F0F1"><font size="2"> &nbsp;显示 <input name="w_views" type="radio" value="显示"
+@if (trim($1->w_views) == '显示' ) checked="CHECKED" @endif>不显示 <input type="radio" name="w_views" value="不显示"
+@if (trim($1->w_views) == '不显示' ) checked="CHECKED" @endif> </font></td>

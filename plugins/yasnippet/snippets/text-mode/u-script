@@ -1,0 +1,5 @@
+# name:uedit-script
+# key: u-s
+# --
+<script type="text/javascript" src="../ueditor/editor_config.js"></script>
+<script type="text/javascript" src="../ueditor/editor_all.js"></script>
