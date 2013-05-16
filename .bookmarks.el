@@ -2,9 +2,9 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("producmodi"
- (filename . "/opt/lampp/htdocs/azn/application/controllers/product.php")
- (front-context-string . "\n        $class ")
- (rear-context-string . "et('w_classid');")
- (position . 6518))
+(("todoLoadtwo"
+ (filename . "/opt/lampp/htdocs/azn/application/views/admin/user_list.blade.php")
+ (front-context-string . "wo('QX_list.php?")
+ (rear-context-string . "  onClick=\"loadt")
+ (position . 3984))
 )

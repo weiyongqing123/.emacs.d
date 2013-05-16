@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: validation error in laravel
+# key: err
+# --
+{{$errors->first('$1','<font color="red">:message</font>')}}

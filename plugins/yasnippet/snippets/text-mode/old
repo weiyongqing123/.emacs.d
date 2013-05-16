@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: validation old in laravel
+# key: old
+# --
+value='{{Input::old('$1')}}'

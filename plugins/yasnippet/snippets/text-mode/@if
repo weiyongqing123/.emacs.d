@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: if in blade
+# key: @if 
+# --
+@if($$1->$2 =='$3') ${1:checked} @endif

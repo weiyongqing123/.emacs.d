@@ -3,9 +3,23 @@
 
 (setq mc/cmds-to-run-for-all
       '(
+        ace-jump-word-mode
         beginning-of-buffer
+        cua-delete-region
+        cua-scroll-down
+        describe-key
+        whole-line-or-region-yank
         ))
 
 (setq mc/cmds-to-run-once
       '(
+        ace-jump-move
+        cua-cancel
+        cua-scroll-up
+        goto-line
+        keyboard-escape-quit
+        mouse-buffer-menu
+        my-recentf-open
+        previous-buffer
+        yas-expand
         ))

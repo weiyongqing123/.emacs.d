@@ -1,4 +1,5 @@
 ;;; csv-nav.el --- navigate and edit CSV files
+;; Version: 20130407.1820
 
 ;; Copyright (C) 2006  Alex Schroeder <alex@gnu.org>
 
@@ -26,6 +27,7 @@
 
 ;;; Code:
 
+;;;###autoload
 (define-generic-mode csv-nav-mode
   nil '(",") nil '(".csv\\'")
   '((lambda ()
@@ -210,4 +212,4 @@ lines separate fields.  The COLUMN must be inserted using
     (forward-char -2)))
 
 (provide 'csv-nav)
-;; csv-nav.el ends here
+;;; csv-nav.el ends here

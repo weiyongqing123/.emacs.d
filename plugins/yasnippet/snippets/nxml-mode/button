@@ -1,0 +1,5 @@
+# contributor: Anders Bach Nielsen <abachn@abachn.net>
+# name: input_button
+# key: button
+# --
+<input id="$1" type="button" name="$1" value="$2" />

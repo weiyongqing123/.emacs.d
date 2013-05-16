@@ -2440,7 +2440,7 @@ where snippets of table might exist."
   (let ((main-dir (replace-regexp-in-string
                    "/+$" ""
                    (or (first (or (yas-snippet-dirs)
-                                  (setq yas-snippet-dirs '("~/.emacs.d/snippets")))))))
+                                  (setq yas-snippet-dirs '("~/.emacs.d/plugins/yasnippet/snippets")))))));;weiyongqing update
         (tables (or (and table
                          (list table))
                     (yas--get-snippet-tables))))

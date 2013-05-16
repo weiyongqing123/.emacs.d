@@ -1,5 +1,6 @@
-;; -*- emacs-lisp -*- <13/03/26 23:03:00 /home/sw/.emacs.d/tramp>
+;; -*- emacs-lisp -*- <13/05/12 08:49:23 /home/sw/.emacs.d/tramp>
 ;; Tramp connection history.  Don't change this file.
 ;; You can delete it, forcing Tramp to reapply the checks.
 
-(nil)
+((["ftp" "elovehome" "elovehome.gotoftp3.com" nil]
+  ("started" t)))

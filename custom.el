@@ -154,15 +154,15 @@ instead."
 (define-key global-map [f1] 'my-recentf-open)
 (define-key global-map [f2] 'save-buffer)
 (define-key global-map [f5] 'call-last-kbd-macro)
-(define-key global-map [f6] 'point-to-register)
-(define-key global-map [f7] 'window-configuration-to-register)
-(define-key global-map [f8] 'jump-to-register)
+(define-key global-map [f6] 'bookmark-set)
+(define-key global-map [f7] 'bookmark-jump)
+(define-key global-map [f8] 'list-bookmarks)
 (define-key global-map [f9] 'goto-last-change)
 (define-key global-map [f10] 'ido-switch-buffer)
 (define-key global-map [f11] 'save-some-buffers)
 (define-key global-map [f12] 'kill-buffer)
 (define-key global-map   (kbd "C-'") 'duplicate-line)
-(define-key global-map   (kbd "C-<f1>") 'projectile-find-file)
+(define-key global-map   (kbd "C-S-o") 'projectile-find-file)
 (define-key global-map  (kbd "C-<up>") 'previous-buffer)
 (define-key global-map  (kbd "C-<down>") 'next-buffer)
 (global-set-key (kbd "<C-S-up>")     'buf-move-up)
@@ -170,9 +170,14 @@ instead."
 (global-set-key (kbd "<C-S-left>")   'buf-move-left)
 (global-set-key (kbd "<C-S-right>")  'buf-move-right)
 
+;;(global-set-key [S-down-mouse-1] 'mouse-appearance-menu)
+(global-set-key [S-down-mouse-1] 'mouse-save-then-kill)
+;;(global-set-key [C-S-mouse-1] 'mouse-save-then-kill)
+
+
 (setq ido-enable-flex-matching t)
 
-;;打开最近访问文件
+;;打开最近访问tabletable文件
 (defun my-recentf-open ()
   "open recent files.  In ido style if applicable --lgfang"
   (interactive)

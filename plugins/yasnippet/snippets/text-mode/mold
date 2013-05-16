@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: validation old of modi in laravel
+# key: mold
+# --
+value='{{Input::old('$1')?Input::old('$1'):$$2->$1}}' 
