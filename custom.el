@@ -19,6 +19,15 @@
 ;;自动识别中文编码的文件
 ;;(require 'unicad)
 
+;;插入时间（不包括日期）
+(defun insert-short-time ()
+  (interactive)
+  (insert (format-time-string "%H:%M:%S" (current-time))))
+
+;; save the password
+(setq epa-file-cache-passphrase-for-symmetric-encryption t)
+ ;; auto-save
+(setq epa-file-inhibit-auto-save nil)
 
 ;;拼写检查的词典
 (ispell-change-dictionary "american" t)
@@ -169,6 +178,7 @@ instead."
 (global-set-key (kbd "<C-S-down>")   'buf-move-down)
 (global-set-key (kbd "<C-S-left>")   'buf-move-left)
 (global-set-key (kbd "<C-S-right>")  'buf-move-right)
+(global-set-key (kbd "C-t")  'insert-short-time)
 
 ;;(global-set-key [S-down-mouse-1] 'mouse-appearance-menu)
 (global-set-key [S-down-mouse-1] 'mouse-save-then-kill)

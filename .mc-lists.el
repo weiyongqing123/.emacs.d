@@ -8,6 +8,8 @@
         cua-delete-region
         cua-scroll-down
         describe-key
+        duplicate-line
+        paredit-forward-delete
         whole-line-or-region-yank
         ))
 
@@ -20,6 +22,7 @@
         keyboard-escape-quit
         mouse-buffer-menu
         my-recentf-open
+        org-self-insert-command
         previous-buffer
         yas-expand
         ))
