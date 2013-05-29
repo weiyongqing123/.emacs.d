@@ -9,6 +9,7 @@
         cua-scroll-down
         describe-key
         duplicate-line
+        js2-mode-show-node
         paredit-forward-delete
         whole-line-or-region-yank
         ))

@@ -179,6 +179,11 @@ instead."
 (global-set-key (kbd "<C-S-left>")   'buf-move-left)
 (global-set-key (kbd "<C-S-right>")  'buf-move-right)
 (global-set-key (kbd "C-t")  'insert-short-time)
+(global-set-key (kbd "C-<f5>")  'window-configuration-to-register)
+(global-set-key (kbd "C-<f6>")  'point-to-register)
+(global-set-key (kbd "C-<f7>")  'jump-to-register)
+(global-set-key (kbd "C-<f8>")  'list-registers)
+
 
 ;;(global-set-key [S-down-mouse-1] 'mouse-appearance-menu)
 (global-set-key [S-down-mouse-1] 'mouse-save-then-kill)
