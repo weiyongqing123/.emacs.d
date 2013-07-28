@@ -1,4 +1,5 @@
 ;;; dsvn.el --- Subversion interface
+;; Version: 20130120.1457
 
 ;; Copyright 2006-2010 Virtutech AB
 ;; Copyright 2010 Intel

@@ -18,6 +18,8 @@
 
 ;;自动识别中文编码的文件
 ;;(require 'unicad)
+;;显示行号
+(global-linum-mode t)
 
 ;;插入时间（不包括日期）
 (defun insert-short-time ()
@@ -38,6 +40,8 @@
 ;;任务计划的映射
 (setq org-agenda-files (list "~/UbuntuOne/life/task.org"))
 
+;;org-mode 自动折行
+(add-hook 'org-mode-hook 'turn-on-auto-fill) 
 
 ;;自定义的宏
 
@@ -223,9 +227,28 @@ instead."
 ;;给相关模式加上括号匹配输入
 (autopair-global-mode) ;; enable autopair in all buffers
 
+;;加上html的代码折叠功能
+;; folding for sgml-mode
+;; (add-hook 'sgml-mode-hook
+;;           '(lambda()
+;;              (hs-minor-mode 1)))
+;; (add-to-list 'hs-special-modes-alist
+;;              '(sgml-mode
+;;                "<!--\\|<[^/>]>\\|<[^/][^>]*[^/]>"
+;;                ""
+;;                "<!--"
+;;                sgml-skip-tag-forward
+;;                nil))
+;;启动ibuffer
+;(ibuffer)
+
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+;;自定义的宏
+(setq last-kbd-macro
+   [?\M-m ?\M-f ?\M-f ?\M-f ?  ?\C-t ?\M-m ?\M-f ?\M-f ?\M-f ?\C-f ?\S-\C-f ?\S-\C-f ?\S-\C-f ?\S-\C-f ?\S-\C-f ?\S-\C-f ?\S-\C-f ?\S-\C-f ?\S-\C-f ?\M-w ?\C-e return ?\C-y])

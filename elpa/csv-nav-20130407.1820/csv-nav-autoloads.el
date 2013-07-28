@@ -3,7 +3,8 @@
 ;;; Code:
 
 
-;;;### (autoloads (csv-nav-mode) "csv-nav" "csv-nav.el" (20867 21677))
+;;;### (autoloads (csv-nav-mode) "csv-nav" "csv-nav.el" (20976 30661
+;;;;;;  458657 256000))
 ;;; Generated autoloads from csv-nav.el
 
 (autoload 'csv-nav-mode "csv-nav" "\
@@ -13,7 +14,8 @@ Major mode for viewing and editing CSV files.
 
 ;;;***
 
-;;;### (autoloads nil nil ("csv-nav-pkg.el") (20867 21677 415800))
+;;;### (autoloads nil nil ("csv-nav-pkg.el") (20976 30661 535966
+;;;;;;  195000))
 
 ;;;***
 

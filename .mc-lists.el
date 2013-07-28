@@ -4,6 +4,8 @@
 (setq mc/cmds-to-run-for-all
       '(
         ace-jump-word-mode
+        autopair-insert-opening
+        autopair-skip-close-maybe
         beginning-of-buffer
         cua-delete-region
         cua-scroll-down
@@ -12,18 +14,27 @@
         js2-mode-show-node
         paredit-forward-delete
         whole-line-or-region-yank
+        winner-undo
         ))
 
 (setq mc/cmds-to-run-once
       '(
         ace-jump-move
+        autopair-insert-or-skip-quote
         cua-cancel
         cua-scroll-up
         goto-line
+        ido-switch-buffer
+        js2-insert-and-indent
         keyboard-escape-quit
+        kid-sdcv-to-buffer
         mouse-buffer-menu
         my-recentf-open
         org-self-insert-command
         previous-buffer
+        projectile-find-file
+        smex
+        view-order-manuals
+        whole-line-or-region-kill-region
         yas-expand
         ))

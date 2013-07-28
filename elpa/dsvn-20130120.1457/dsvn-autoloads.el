@@ -3,8 +3,8 @@
 ;;; Code:
 
 
-;;;### (autoloads nil nil ("dsvn-pkg.el" "dsvn.el") (20736 55314
-;;;;;;  197962))
+;;;### (autoloads nil nil ("dsvn-pkg.el" "dsvn.el") (20976 30662
+;;;;;;  940395 461000))
 
 ;;;***
 
