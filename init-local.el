@@ -13,7 +13,7 @@
 ;;插入日期
 (defun insert-short-day ()
   (interactive)
-  (insert (format-time-string "%Y-%m-%d " (current-time))))
+  (insert (format-time-string "%Y-%m-%d" (current-time))))
 
 ;; save the password
 (setq epa-file-cache-passphrase-for-symmetric-encryption t)
