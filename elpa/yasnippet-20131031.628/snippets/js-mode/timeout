@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: $timeout();
+# key: timeout
+# --
+$timeout(function(){
+  $1
+}, $2);

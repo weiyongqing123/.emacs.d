@@ -5,7 +5,7 @@
 
 ;;;### (autoloads (resume save-current-configuration wipe restore-window-configuration
 ;;;;;;  current-window-configuration-printable) "revive" "revive.el"
-;;;;;;  (20857 9252))
+;;;;;;  (20985 58412 862294 983000))
 ;;; Generated autoloads from revive.el
 
 (autoload 'current-window-configuration-printable "revive" "\
@@ -49,7 +49,7 @@ Configuration should be saved by save-current-configuration.
 
 ;;;***
 
-;;;### (autoloads nil nil ("revive-pkg.el") (20857 9252 537479))
+;;;### (autoloads nil nil ("revive-pkg.el") (20985 58412 983076 704000))
 
 ;;;***
 

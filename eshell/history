@@ -1,0 +1,4 @@
+cd throne/
+node
+ls
+mongod

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: create object of input parameter
+# key: oin
+# --
+$1 : req.query.$1

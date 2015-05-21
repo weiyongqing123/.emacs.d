@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: <textarea class="..." rows="3"></textarea>
+# key: textarea
+# --
+<textarea class="form-control" rows="3">$1</textarea>

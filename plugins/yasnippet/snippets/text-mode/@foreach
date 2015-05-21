@@ -1,5 +1,0 @@
-# name:@foreach on laravel view
-# key: @for
-# --
-@foreach($$1->results as $$2)
-@endforeach

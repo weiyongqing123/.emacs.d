@@ -91,9 +91,11 @@
 
 ;;----------------------------------------------------------------------------
 ;; Allow users to provide an optional "init-local" containing personal settings
+;; 用户自定义设置
 ;;----------------------------------------------------------------------------
 (require 'init-local nil t)
 
+(require 'fold-dwim)
 
 ;;----------------------------------------------------------------------------
 ;; Locales (setting them earlier in this file doesn't work in X)
@@ -102,3 +104,5 @@
 ;; Local Variables:
 ;; no-byte-compile: t
 ;; End:
+(put 'scroll-left 'disabled nil)
+(put 'erase-buffer 'disabled nil)

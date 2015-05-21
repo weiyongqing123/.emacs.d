@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: req parameter
+# key: para
+# --
+res.query.$1

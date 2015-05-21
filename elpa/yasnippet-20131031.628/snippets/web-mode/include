@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: include  in laravel
+# key: include
+# --
+@include('$1')

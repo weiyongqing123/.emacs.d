@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: .factory("...Service", (...) ->)in angular
+# key: a-f
+# --
+.factory('$1Service',['$http',($http) ->])

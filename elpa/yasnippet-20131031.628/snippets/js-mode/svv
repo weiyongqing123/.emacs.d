@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: scope.value=value
+# key: svv
+# --
+$scope.$1 = $2;

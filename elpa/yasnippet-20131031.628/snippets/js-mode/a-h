@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: .attr("height", "")
+# key: a-h
+# --
+.attr("height", "$1")

@@ -1,1 +1,1 @@
-(define-package "revive" "20121022.1311" "Resume Emacs [source: github]" (quote nil))
+(define-package "revive" "20121022.1311" "Resume Emacs [github]" (quote nil))

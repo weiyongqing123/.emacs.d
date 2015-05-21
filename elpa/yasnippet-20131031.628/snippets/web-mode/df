@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: date format in blade
+# key: df
+# --
+{{date('Y-m-d', strtotime($$1))}}

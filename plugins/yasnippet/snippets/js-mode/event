@@ -1,5 +1,0 @@
-# -*- mode: snippet -*-
-# name: bind click event in jquery
-# key: click
-# --
-$("#$1").on('click',$1);

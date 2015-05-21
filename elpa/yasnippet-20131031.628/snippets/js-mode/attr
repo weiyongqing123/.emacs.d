@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: attr("", "")
+# key: attr
+# --
+attr("$1", "$2")

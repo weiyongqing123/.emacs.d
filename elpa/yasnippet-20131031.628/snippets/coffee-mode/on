@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: event class.on "message",(value) ->
+# key: on
+# --
+$1.on "$2",(value) ->
+  $3

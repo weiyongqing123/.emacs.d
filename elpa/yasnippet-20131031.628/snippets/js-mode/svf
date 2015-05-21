@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: scope.value=function
+# key: svf
+# --
+$scope.$1 = function ($2) {
+  $3
+};

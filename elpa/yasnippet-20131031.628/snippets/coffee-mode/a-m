@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: angular.module('...') in angular
+# key: a-m
+# --
+angular.module('$1')

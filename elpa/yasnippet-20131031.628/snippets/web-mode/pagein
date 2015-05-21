@@ -1,0 +1,4 @@
+# name:paginate
+# key: pagin
+# --
+@include('structure.manager_page')

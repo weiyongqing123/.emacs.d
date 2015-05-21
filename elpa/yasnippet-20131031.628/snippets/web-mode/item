@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name:{{$item->...}}  in blade
+# key: item
+# --
+{{$item->$1}}

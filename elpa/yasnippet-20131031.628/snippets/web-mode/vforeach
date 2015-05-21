@@ -1,0 +1,5 @@
+# name:@foreach on laravel view
+# key: vforeach
+# --
+@foreach($paginator as $$1)
+@endforeach

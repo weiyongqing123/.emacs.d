@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: select in jquery
+# key: $#
+# --
+$('#$1').$2

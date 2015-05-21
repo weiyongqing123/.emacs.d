@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: creat object of variable
+# key: ov
+# --
+$1 : $2

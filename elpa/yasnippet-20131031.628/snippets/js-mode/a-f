@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: .attr("fill", "")
+# key: a-f
+# --
+.attr("fill", "$1")

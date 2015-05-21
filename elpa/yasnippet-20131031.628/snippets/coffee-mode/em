@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: export method
+# key: em
+# --
+exports.$1 = (reg, res, next) ->

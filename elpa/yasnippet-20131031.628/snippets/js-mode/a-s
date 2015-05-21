@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: .attr("stroke", "")
+# key: a-s
+# --
+.attr("stroke", "$1")

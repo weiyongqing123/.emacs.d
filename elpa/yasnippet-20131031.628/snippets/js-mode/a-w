@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: .attr("width", "")
+# key: a-w
+# --
+.attr("width", "$1")

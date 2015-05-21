@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: .attr("opacity", "")
+# key: a-o
+# --
+.attr("opacity", "$1")

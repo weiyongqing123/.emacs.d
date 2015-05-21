@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: $http.get('...').success (r) -> in angular
+# key: a-hg
+# --
+$http.get('$1').success (r) -> 

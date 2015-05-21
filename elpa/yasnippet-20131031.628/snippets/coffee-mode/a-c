@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: .controller('...',['...', '...',(...,...) ->]) in angular
+# key: a-c
+# --
+.controller('$1Ctrl',['$scope', '$http',($scope,$http) ->])

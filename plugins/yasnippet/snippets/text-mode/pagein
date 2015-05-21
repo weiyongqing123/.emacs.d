@@ -1,4 +1,0 @@
-# name:paginate
-# key: pagin
-# --
-{{$1->links()}}

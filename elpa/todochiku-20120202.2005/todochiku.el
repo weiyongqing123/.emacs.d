@@ -1,6 +1,7 @@
 ;;; todochiku.el --- A mode for interfacing with Growl, Snarl, and the like.
 (defconst todochiku-version "0.0.8")
-;; Version: 0.0.8
+;; Version: 20120202.2005
+;; X-Original-Version: 0.0.8
 
 ;; Copyright (c)2008 Jonathan Arkell. (by)(nc)(sa)  Some rights reserved.
 ;; Author: Jonathan Arkell <jonnay@jonnay.net>

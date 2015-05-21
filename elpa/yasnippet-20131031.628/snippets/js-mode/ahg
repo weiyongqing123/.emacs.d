@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: angula http get
+# key: ahg
+# --
+$http.get($1).success(function(r){
+  $2
+});

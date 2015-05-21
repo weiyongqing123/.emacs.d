@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: .attr("y", "")
+# key: a-y
+# --
+.attr("y", $1)

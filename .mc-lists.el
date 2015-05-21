@@ -7,34 +7,83 @@
         autopair-insert-opening
         autopair-skip-close-maybe
         beginning-of-buffer
+        c-electric-delete-forward
         cua-delete-region
+        cua-paste-pop
         cua-scroll-down
         describe-key
         duplicate-line
+        evil-change
+        evil-delete
+        evil-force-normal-state
+        goto-last-change
         js2-mode-show-node
+        maybe-suspend-frame
+        move-text-up
+        occur-mode-mouse-goto
+        org-delete-char
+        overwrite-mode
         paredit-forward-delete
+        save-some-buffers
+        what-cursor-position
         whole-line-or-region-yank
         winner-undo
+        zap-up-to-char
         ))
 
 (setq mc/cmds-to-run-once
       '(
+        ace-jump-mode
         ace-jump-move
+        autopair-insert-or-skip-paired-delimiter
         autopair-insert-or-skip-quote
+        bmkp-previous-autonamed-bookmark-repeat
+        c-electric-semi&comma
         cua-cancel
+        cua-copy-region
+        cua-delete-rectangle
+        cua-paste
         cua-scroll-up
+        dabbrev-completion
+        delete-window
+        end-of-buffer
+        evil-backward-char
+        evil-complete-previous
+        evil-exit-visual-state
+        evil-forward-char
+        evil-inner-sentence
+        evil-insert
+        evil-normal-state
+        evil-paste-after
+        evil-replace
         goto-line
+        ido-find-file
         ido-switch-buffer
         js2-insert-and-indent
+        js3-mode-show-node
+        js3-mode-toggle-element
         keyboard-escape-quit
         kid-sdcv-to-buffer
         mouse-buffer-menu
+        mouse-save-then-kill
+        mouse-set-region
         my-recentf-open
+        next-buffer
         org-self-insert-command
+        paredit-backslash
+        paredit-splice-sexp
         previous-buffer
         projectile-find-file
+        scroll-other-window
+        select-window-1
+        select-window-2
+        smart-symbol-go-backward
+        smart-symbol-go-forward
         smex
+        throne-web-test
         view-order-manuals
+        web-mode-element-select
         whole-line-or-region-kill-region
+        whole-line-or-region-kill-ring-save
         yas-expand
         ))

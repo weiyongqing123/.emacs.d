@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: angular value
+# key: av
+# --
+<% $1 %>
