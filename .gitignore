@@ -6,6 +6,7 @@ tramp
 .session
 *.session
 *.dat
+projectile.cache
 *.eld
 .mc-lists.el
 ac-comphist.dat
