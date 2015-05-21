@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: $table->string('...'); in laravel
+# key: ts
+# --
+$table->string('$1');

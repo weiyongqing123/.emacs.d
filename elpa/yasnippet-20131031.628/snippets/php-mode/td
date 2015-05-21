@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: $table->dateTime('...'); in laravel
+# key: td
+# --
+$table->dateTime('$1');

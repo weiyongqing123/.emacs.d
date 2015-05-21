@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name:  $table->string('slug')->nullable(); in laravel
+# key: t-s-n
+# --
+$table->string('$1')->nullable();

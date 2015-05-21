@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: $table->timestamps();  in laravel
+# key: tt
+# --
+$table->timestamps(); 

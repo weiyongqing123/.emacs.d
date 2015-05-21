@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: date format
+# key: df
+# --
+date("Y-m-d H:i:s", ${1:time()});

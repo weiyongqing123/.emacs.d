@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: Route::group(['prefix' => '$1', 'namespace' => '$2']in laravel
+# key: r-group
+# --
+Route::group(['prefix' => '$1', 'namespace' => '$2'], function()
+{
+  $3
+});

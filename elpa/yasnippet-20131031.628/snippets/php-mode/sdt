@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: Schema::drop('...') in laravel
+# key: sdt
+# --
+Schema::drop('$1');

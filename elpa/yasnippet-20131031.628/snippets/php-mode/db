@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: db select table in laravel
+# key: db
+# --
+DB::table('$1')

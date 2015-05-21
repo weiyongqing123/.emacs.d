@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: valid in laravel
+# key: valid
+# --
+$input = Input::all();
+$v = Validator::make($input,$this->rules,$this->messages);
+        if($v->fails()){
+            return Redirect::to('$1.html')
+                ->with_errors($v)
+                ->with_input();
+        }

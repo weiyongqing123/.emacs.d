@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: redirect in laravel
+# key: redir
+# --
+return Redirect::to('$1')$2;

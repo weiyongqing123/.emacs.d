@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: db where in laravel
+# key: where
+# --
+->where('$1','$2',$3)

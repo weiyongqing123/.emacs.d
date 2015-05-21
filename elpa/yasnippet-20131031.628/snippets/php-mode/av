@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: array value in laravel
+# key: av
+# --
+'$1' => $$2,

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: change . to ->
+# key: .
+# --
+->

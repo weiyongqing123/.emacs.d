@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: db orderBy  in laravel
+# key: order
+# --
+->orderBy('$1')

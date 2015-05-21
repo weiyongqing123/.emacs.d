@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: db query  in laravel
+# key: query
+# --
+DB::query('$1');

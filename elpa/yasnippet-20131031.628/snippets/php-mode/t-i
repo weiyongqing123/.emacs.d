@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: $table->integer('...'); in laravel
+# key: t-i
+# --
+$table->integer('$1');

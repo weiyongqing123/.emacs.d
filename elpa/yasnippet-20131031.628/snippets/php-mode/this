@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: this in class
+# key: this
+# --
+$this->

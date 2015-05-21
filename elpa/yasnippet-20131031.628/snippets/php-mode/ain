@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: array input in laravel
+# key: ain
+# --
+'$1' => Input::get('$1'),

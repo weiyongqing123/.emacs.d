@@ -1,0 +1,6 @@
+#name : db update in laravel
+#key : update
+# --
+->update(array(
+  $1
+));

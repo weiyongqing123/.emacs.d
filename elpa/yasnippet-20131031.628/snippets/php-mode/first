@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: db first in laravel
+# key: first
+# --
+->first();

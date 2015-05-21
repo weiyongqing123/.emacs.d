@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: Schema::create('users',function($table) in laravel
+# key: sct
+# --
+Schema::create('$1',function($table)
+{
+
+});

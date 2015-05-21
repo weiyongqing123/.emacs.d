@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: $table->increments('id') in laravel
+# key: tinc
+# --
+$table->increments('id');

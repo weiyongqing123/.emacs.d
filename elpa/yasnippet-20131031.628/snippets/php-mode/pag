@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: paginate in laravel
+# key: pag
+# --
+->paginate($per_page);

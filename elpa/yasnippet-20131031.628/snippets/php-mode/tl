@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: $table->longText(...); in laravel
+# key: tl
+# --
+$table->longText('$1');

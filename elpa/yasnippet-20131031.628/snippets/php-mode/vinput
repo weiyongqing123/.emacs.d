@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: var and input in laravel
+# key: vinput
+# --
+$$1 = Input::get('$1');

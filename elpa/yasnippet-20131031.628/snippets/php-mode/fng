@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: fun get in larvel
+# key: fng
+# --
+public function get_$1()
+{
+   $2
+}

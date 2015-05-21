@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: @if($...=='...') selected="selected" @endif in blade
+# key: ifs
+# --
+@if($...=='...') selected="selected" @endif

@@ -1,0 +1,4 @@
+#name : db insert in laravel
+#key : insert
+# --
+->insert(array($1));

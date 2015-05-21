@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: db join in laravel
+# key: join
+# --
+->join('$1')

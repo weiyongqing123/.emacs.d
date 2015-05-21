@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: view where in laravel
+# key: view
+# --
+$view = View::make('$1');
+return $view;

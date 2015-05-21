@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: $table->foreign(...)->references(...)->on(...); in laravel
+# key: tfro
+# --
+$table->unsignedInteger('$1');
+$table->foreign('$1')->references('id')->on('$2');

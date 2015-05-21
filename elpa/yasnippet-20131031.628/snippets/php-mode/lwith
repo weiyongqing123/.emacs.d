@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: db with  in laravel
+# key: with
+# --
+->with('$1',$$1)

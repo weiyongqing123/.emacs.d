@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: Route::get(..., ...@...})in laravel
+# key: r-get
+# --
+Route::get('$1', '$2@$3');
