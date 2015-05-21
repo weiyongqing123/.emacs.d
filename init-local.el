@@ -10,6 +10,10 @@
 (defun insert-short-time ()
   (interactive)
   (insert (format-time-string "%H:%M:%S " (current-time))))
+;;插入日期
+(defun insert-short-day ()
+  (interactive)
+  (insert (format-time-string "%Y-%m-%d " (current-time))))
 
 ;; save the password
 (setq epa-file-cache-passphrase-for-symmetric-encryption t)
@@ -213,6 +217,7 @@ instead."
 (global-set-key (kbd "C-M-'")  'my-uncomment)
 
 (global-set-key (kbd "C-c t")  'insert-short-time)
+(global-set-key (kbd "C-c d")  'insert-short-day)
 
 ;;cider
 
