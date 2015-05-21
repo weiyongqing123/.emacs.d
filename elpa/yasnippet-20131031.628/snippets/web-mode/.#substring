@@ -1,5 +1,0 @@
-# -*- mode: snippet -*-
-# name: mb_substr in blade
-# key: subs
-# --
-{{mb_substr(strip_tags($$1),0,$2,"UTF-8")}}
