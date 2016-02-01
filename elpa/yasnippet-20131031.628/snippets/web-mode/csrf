@@ -1,0 +1,4 @@
+# name:laravel-csrf
+# key: csrf
+# --
+{!! csrf_field() !!}

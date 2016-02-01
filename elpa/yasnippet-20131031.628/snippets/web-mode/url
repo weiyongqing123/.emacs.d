@@ -1,0 +1,4 @@
+# name:laravel-url
+# key: url
+# --
+{{url('$1.html'$2)}}

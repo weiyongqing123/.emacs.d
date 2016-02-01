@@ -2,4 +2,4 @@
 # name: array input in laravel
 # key: ain
 # --
-'$1' => Input::get('$1'),
+'$1' => $request->input('$1'),

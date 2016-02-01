@@ -2,5 +2,4 @@
 # name: view where in laravel
 # key: view
 # --
-$view = View::make('$1');
-return $view;
+return view('$1', compact("$2"));

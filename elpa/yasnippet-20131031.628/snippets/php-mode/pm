@@ -2,7 +2,7 @@
 # name: public function template in laravel
 # key: pm
 # --
-public function $1(){
-    $view = View::make('$2');
-    return $view;
+/* $1 */
+public function $2(){
+  
 }
