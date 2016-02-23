@@ -1,0 +1,5 @@
+# Author: weiyongqing
+# name: play.api.Logger.debug(s"Rounds sync: ${$1}")
+# key: log
+# --
+play.api.Logger.debug(s"Rounds sync: ${$1}")

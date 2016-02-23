@@ -183,11 +183,14 @@ instead."
    [?\M-x ?s ?a ?v ?e ?- ?s ?o ?m ?e ?- ?b ?u ?f ?f ?e ?r ?s return ?!])
 (fset 'my-kill-buffer
    [?\M-x ?k ?i ?l ?l ?- ?b ?u ?f ?f ?e ?r return return])
+(fset 'my-diary-goto-ending
+   [?\M-> ?\C-p tab ?\M-> ?\C-p tab ?\M->])
 
 ;;自定义的快捷键
 (define-key global-map [f1] 'my-recentf-open)
 (define-key global-map [f2] 'my-save-all-buffers)
 (define-key global-map [f5] 'call-last-kbd-macro)
+(define-key global-map [f11] 'my-diary-goto-ending)
 (define-key global-map [f10] 'ido-switch-buffer)
 (define-key global-map [f12] 'my-kill-buffer)
 (define-key global-map [f7] 'my-copy-line)
@@ -202,7 +205,7 @@ instead."
 (global-set-key (kbd "<M-left>")  'bmkp-previous-autonamed-bookmark-repeat)
 
 (global-set-key (kbd "<menu>")  'ace-jump-word-mode)
-(global-set-key (kbd "C-.")  'goto-last-change)
+(global-set-key (kbd "C-<f1>")  'goto-last-change)
 
 (define-key global-map (kbd "C-o") 'projectile-find-file)
 (define-key global-map   (kbd "C-'") 'duplicate-line)
@@ -280,8 +283,13 @@ selective-display --lgfang"
 (global-set-key (kbd "C-c n")  'my-task-new)
 (global-set-key (kbd "C-c <end>")  'my-task-end)
 
+(fset 'g-s-del-lines
+   [C-S-backspace ?\M-> backspace ?\M-< C-tab ?\C-n ?\C-n ?\M-> ?\M-x ?m ?c ?/ ?e ?d ?i ?t ?- ?e ?n ?d ?s ?- ?o ?f ?- ?l ?i ?n ?e ?s return backspace backspace return])
+
 (fset 'gbk-code
    [?\M-x ?r ?e ?v ?e ?r ?t ?- ?b ?u ?f ?f ?e ?r ?- ?w ?i ?t ?h ?- ?c ?o ?d ?i ?n ?g ?- ?s ?y ?s ?t ?e ?m return ?g ?b ?2 ?3 ?1 ?2 ?- ?d ?o ?s return ?y])
+(fset 'my-utf-8
+   [?\M-x ?r ?e ?v ?e ?r ?t ?- ?b ?u ?f ?f ?e ?r ?- ?w ?i ?t ?h ?- ?c ?o ?d ?i ?n ?g ?- ?s ?y ?s ?t ?e ?m return ?u ?t ?f ?- ?8 ?- ?e ?m ?a ?c ?s return ?y])
 
 (defun my-diff-time ()
   "calc diff time"

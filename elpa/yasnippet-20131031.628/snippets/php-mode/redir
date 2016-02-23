@@ -2,4 +2,4 @@
 # name: redirect in laravel
 # key: redir
 # --
-return Redirect::to('$1')$2;
+return redirect()->route('$1');
